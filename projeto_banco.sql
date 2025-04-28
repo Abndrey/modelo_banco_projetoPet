@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `pet`.`responsavel_pet` (
   `endereco` VARCHAR(45) NOT NULL,
   `senha` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idresponsavel`))
-ENGINE = InnoDB
+ENGINE = InnoDB;
 
 CREATE TABLE IF NOT EXISTS `pet`.`Endereco` (
   `idEndereco` INT NOT NULL,
@@ -31,17 +31,16 @@ CREATE TABLE IF NOT EXISTS `pet`.`Pet_shop` (
   `cnpj` VARCHAR(255) NOT NULL,
   `telefone` VARCHAR(255) NOT NULL,
   PRIMARY KEY (`idPet_shop`))
-ENGINE = InnoDB
+ENGINE = InnoDB;
 
 
-CREATE TABLE IF NOT EXISTS `mydb`.`pet` (
+CREATE TABLE IF NOT EXISTS `pet`.`pet` (
   `idpet` INT NOT NULL,
   `nome` VARCHAR(45) NOT NULL,
   `idade` VARCHAR(45) NOT NULL,
-  `raca` VARCHAR(45) NOT NULL,
   `raca` VARCHAR(45) NOT NULL,
   `fotoPet` VARCHAR(45) NOT NULL,
   `porte` VARCHAR(45) NOT NULL,
   `sexo` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idpet`))
-ENGINE = InnoDB
+ENGINE = InnoDB;
