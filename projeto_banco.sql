@@ -44,3 +44,25 @@ CREATE TABLE IF NOT EXISTS `pet`.`pet` (
   `sexo` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idpet`))
 ENGINE = InnoDB;
+
+CREATE TABLE IF NOT EXISTS `agenda`.`usuario_agenda` (
+  `idagenda` INT NOT NULL,
+  `tosa` VARCHAR(45) NOT NULL,
+  `banho` VARCHAR(45) NOT NULL,
+  `checkup` VARCHAR(45) NOT NULL,
+  `consulta_marcada` VARCHAR(45) NOT NULL,
+  `historico` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`idagenda`))
+ENGINE = InnoDB;
+
+CREATE TABLE IF NOT EXISTS `pet`.`pet_shop` (
+  `idpet_shop` INT NOT NULL,
+  `nome` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `telefone` VARCHAR(45) NOT NULL,
+  `cnpj` VARCHAR(45) NOT NULL,
+  `responsavel` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`idpet_shop`))
+ENGINE = InnoDB
+
+
