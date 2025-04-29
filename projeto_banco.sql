@@ -65,4 +65,16 @@ CREATE TABLE IF NOT EXISTS `pet`.`pet_shop` (
   PRIMARY KEY (`idpet_shop`))
 ENGINE = InnoDB
 
+create database vacina;
+
+use vacina;
+
+CREATE TABLE IF NOT EXISTS `vacina`.`vacina_tipo` (
+  `idvacina_tipo` INT NOT NULL,
+  `data_vacina` VARCHAR(255) NOT NULL,
+  `idade_vacina` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`idvacina_tipo`))
+ENGINE = InnoDB;
+
+
 
